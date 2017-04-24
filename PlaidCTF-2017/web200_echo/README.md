@@ -22,7 +22,7 @@ Now that we have [run.py](run.py) we can see that it's splitting our `input` int
 Inside of the docker container we only have access to the obfuscated flag. In additon we only have output as a _wav -> mp3_. Let's leverage the existing text-to-speech and have it read us the flag. But first we need to deobfuscate it.
 
 ```python
-import sys
+import sys, os
 p = '/share/flag'
 l = os.stat(p).st_size / 65000
 f = open(p)
