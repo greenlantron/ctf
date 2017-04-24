@@ -1,4 +1,4 @@
-## Logarithms Are Hard (Web, 151 points, 201 solves)
+## Logarithms Are Hard (Misc, 10 points, 362 solves)
 
     What is e^(1.000000001)?
     
