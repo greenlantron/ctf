@@ -4,7 +4,7 @@
     
     Can you fix it and get the flag?
 
-We are given a challenge with a [zip file][zipper_50d3dc76dcdfa047178f5a1c19a52118.zip] and a request to fix it. Attempting to unzip it returns an error as expected.
+We are given a challenge with a [zip file](zipper_50d3dc76dcdfa047178f5a1c19a52118.zip) and a request to fix it. Attempting to unzip it returns an error as expected.
 ```
 $ unzip zipper_50d3dc76dcdfa047178f5a1c19a52118.zip
 Archive:  zipper_50d3dc76dcdfa047178f5a1c19a52118.zip
@@ -24,7 +24,7 @@ with open('zipper_50d3dc76dcdfa047178f5a1c19a52118.zip') as f:
     for i in range(0x1E, 0x88):
         try:
             f.seek(i)
-            decoded_data = f.read(i - 0x88)
+            decoded_data = f.read(0x88 - i)
             print zlib.decompress(decoded_data , -15)
         except Exception as e:
             pass
