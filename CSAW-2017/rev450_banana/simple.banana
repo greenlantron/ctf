@@ -1,0 +1,18 @@
+banAnas baNanas baNANAs banAnAS banANaS banaNAs BANANAs BANaNas BANAnas bANanAS baNaNAs banaNAs bANaNas BaNaNaS baNanas BaNaNas BaNanas BaNANas baNAnaS banaNAS bANAnAs banANAS bAnaNAs BANAnAS BANAnas BaNANas bAnANas BaNaNaS banAnAs bANAnAs baNaNas BanaNaS bANANas banaNas bAnANaS bANANaS BaNAnas baNanAs baNanAS BaNAnAs bANANas banAnas bAnanaS banANaS bANaNAS banANaS baNanAS BaNanAS BANAnAS BaNanaS
+banANas baNanas BAnaNas BANANAS BANanAs BANANAS BaNAnas BAnaNaS BAnANaS bANaNas
+# 1: set BUF8 to key
+# 2: set BUF4 to 'BanaNAs!'
+bananaS banANAS                 READ STDIN to BUF1 (age)
+# bananaS banANAs                 READ STDIN to BUF2 (name)
+# bananaS banANaS                 READ STDIN to BUF3 (color)
+# bananas banANAS                 PRINT BUF1 (AGE)
+# bananas banANAs                 PRINT BUF2 (name)
+# bananas banANaS                 PRINT BUF3 (color)
+# bananas banAnas                 PRINT BUF8 (FLAG BEFORE)
+#
+# bananas banANas                 PRINT BUF4 (BanaNAs!)
+banANas baNAnas banANAS         BUF4 ^= BUF1 (0x40BC2A)
+# bananas banANas                 PRINT BUF4 (BanaNAs!)
+#
+banAnas baNanAS banANas         BUF8 ^= BUF4 (0x40D9CA)
+bananas banAnas                 PRINT BUF8 (FLAG)
